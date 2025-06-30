@@ -1,0 +1,2 @@
+{"level":"info","message":"Login request received","timestamp":"2025-06-26T09:55:56.656Z"}
+{"error":{"issues":[{"code":"invalid_type","expected":"string","message":"Required","path":["email"],"received":"undefined"},{"code":"invalid_type","expected":"string","message":"Required","path":["password"],"received":"undefined"}],"name":"ZodError"},"level":"warn","message":"Validation failed for login","timestamp":"2025-06-26T09:55:56.659Z"}
