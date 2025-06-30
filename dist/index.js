@@ -10,5 +10,5 @@ const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use("/api/v1/users", user_route_1.default);
-const PORT = process.env.PORT ?? 5000;
+const PORT = process.env.PORT ?? 443;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

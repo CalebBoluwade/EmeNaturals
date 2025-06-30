@@ -51,8 +51,8 @@ const registerUser = async (req, res) => {
 };
 exports.registerUser = registerUser;
 const loginUser = async (req, res) => {
-    logger_1.default.info('Login request received', { email: req.body.email });
     const parsed = user_schema_1.loginUserSchema.safeParse(req.body);
+    logger_1.default.info('Login request received', { email: req.body.email });
     if (!parsed.success) {
         logger_1.default.warn('Validation failed for login', { error: parsed.error });
         res.status(400).json(parsed.error);
